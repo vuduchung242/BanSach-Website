@@ -1,0 +1,10 @@
+﻿@using WebBanSach.Models;
+@{
+    ViewBag.Title = "LoaiSach_ChuDe";
+    List<loaisach_chude_Result> oj = ViewBag.Chude;  
+}
+
+@foreach (var n in oj)
+{
+    <div class="chimuc-vanhoc">@n.TenChuDe</div>
+}

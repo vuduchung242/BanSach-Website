@@ -1,0 +1,37 @@
+﻿
+@{
+    //Layout = "~/Views/Shared/NguoiDungBanSach.cshtml";
+    ViewBag.Title = "Index";
+}
+
+@using WebBanSach.Models
+@model List<Sach_Tacgia_Thamgia_Result>
+
+<div id="content">
+    @foreach (var item in Model)
+    {
+        <div class="sanpham" data-sp="@item.MaSach">
+            <a class="sanpham-chuanoidung">
+                <img src="~/Anh Bia Sach/@item.AnhBia" />
+                <p class="tensach_sach">@item.TenSach</p>
+                <p class="tentg_sach">@item.TenTacGia</p>
+                <p class="gia_sach">
+                    <span class="giaban">@item.GiaBan</span>
+                    <span class="giamgia">-@item.GiamGia%</span><br />
+                    <span class="giacu">@item.GiaCu</span>
+                </p>
+            </a>
+            @if (@item.SoLuongTon > 0)
+            {
+                <button class="sanpham-giohang" data-cart="@item.MaSach">
+                    <i class="fa fa-cart-plus" aria-hidden="true" style="font-size: 1.8em; line-height: .75em;vertical-align: -18%; margin-right:10px;"></i>Thêm vào giỏ hàng
+                </button>
+            }
+            else
+            {
+                <button class="sanpham-hethang" data-cart="@item.MaSach">Đã hết hàng</button>
+            }
+        </div>
+    }
+
+</div>

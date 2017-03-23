@@ -1,0 +1,110 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    @*Css của teamplate*@
+    <link href="~/Content/CssLayoutNguoiDung/screen.css" rel="stylesheet" />
+    <link href="~/Content/CssLayoutNguoiDung/fonts.css" rel="stylesheet" />
+    @*Css tự thiết kế*@
+    <link href="~/Content/CssLayoutNguoiDung/NguoiDungCss.css" rel="stylesheet" />
+    @*font awesome*@
+    <link href="~/Content/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    @*JS tự thiết kế*@
+    <script src="~/Scripts/jquery-3.1.1.min.js"></script>
+    <script src="~/Scripts/JSNguoiDung/NguoiDung-JS.js"></script>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    @*chen css, jquery của nivo slider*@
+    <link href="~/Nivo Slider/default.css" rel="stylesheet" />
+    <link href="~/Nivo Slider/nivo-slider.css" rel="stylesheet" />
+    <script src="~/Nivo Slider/jquery.nivo.slider.js"></script>
+    <script src="~/Nivo Slider/jquery.nivo.slider.pack.js"></script>
+</head>
+<body>
+
+    <div id="ToanTrang">
+        <section class="blank">
+            <div class="flash">
+                <div class="Phone">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    (0962441498)
+                </div>
+                @*Tao div đang ký đang nhập*@
+                <div class="DangKyDangNhap">
+                    <a id="dangky" href="@Url.Action("DangKy", "Home")"><i class="fa fa-user-plus fa-fw" aria-hidden="true"></i>  Đăng Ký</a>
+                    <a id="dangnhap" href="@Url.Action("DangNhap", "Home")"><i class="fa fa-sign-in fa-fw" aria-hidden="true"></i>  Đăng Nhập</a>
+                </div>
+            </div>
+            <div class="flash success" id="divDanhMuc">
+                <ul class="navMenu">
+                    <li>
+                        @Html.ActionLink("Trang Chủ", "Index", "Home")
+                    </li>
+                    <li>
+                        <a href="#">Giới Thiệu</a>
+                    </li>
+                    <li>
+                        <a href="#">Liên Hệ</a>
+                    </li>
+                    <li>
+                        <a href="#">Hướng Dẫn</a>
+                    </li>
+                    <li>
+                        <a href="#">Sách</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div id="menutrai">
+                @*hôp thoai tim kiem de dau cái menu3 này*@
+                @*chèn vào nội dung của menutrai partial view*@
+                @Html.Action("LoaiSachPartial", "LoaiSach")
+            </div>
+            @*nivo slider*@
+            <div id="menuphai">
+                
+
+                @*Div body*@
+                <div id="noidung">
+                    <div id="bartieude">Trang Chủ</div>
+                    <div id="barsukien">
+                        <div class="sort-button">
+                            <div class="sort-bao">
+                                <span class="sort-sanpham">Sản phẩm chọn lọc</span>
+                                <i class="fa fa-caret-down" id="caret" aria-hidden="true"></i>
+                            </div>
+                            <ul class="sort-list">
+                                <li class="li-sort"><a href="#">Bán chạy nhất</a></li>
+                                <li class="li-sort"><a href="#">Giảm giá nhiều nhất</a></li>
+                                <li class="li-sort"><a href="#">Hàng mới nhập</a></li>
+                                <li class="li-sort"><a href="#">Ngày xuất bản</a></li>
+                                <li class="li-sort"><a href="#">Giá: Thấp đến Cao</a></li>
+                                <li class="li-sort"><a href="#">Giá: Cao đến Thấp</a></li>
+                                <li class="li-sort"><a href="#">Sản phẩm chọn lọc</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    @RenderBody() @*phải có thuộc tính này... định nghĩa đây là layout để các trang khác kế thừa*@
+                    <div id="content1"></div>
+                    @*@Html.Action("All_Sach","Sach");*@
+                </div>
+            </div>
+            <div style="clear:both"></div>
+
+            <section class="blank items">
+                <div>
+                    <p id="asd" data-id="1" class="button button-buy">Buy button (full width for columns)</p>
+
+                </div>
+            </section>
+    </div>
+
+
+</body>
+</html>

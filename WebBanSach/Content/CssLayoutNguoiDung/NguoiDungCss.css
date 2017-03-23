@@ -1,0 +1,407 @@
+﻿/*Sử dụng độ rộng cho div toan trang*/
+div#ToanTrang {
+    position: relative; /*thuộc tính cố định cho trang*/
+}
+/*Thiết kế link đk, đn*/
+.DangKyDangNhap {
+    float: right; /*đưa về phải*/
+    margin-top: -1.1%;
+}
+
+    .DangKyDangNhap a:hover {
+        text-decoration: none; /*mất đi gạch chân*/
+        opacity: 0.5; /*Làm mờ đi 50%*/
+    }
+#dangnhap {
+    margin-left: 25px;
+}
+
+.Phone {
+    float: left;
+    margin-top: -1.1%;
+}
+/*Css divDanhMuc*/
+#divDanhMuc {
+    height: 30px;
+}
+/*css cho menu header*/
+.navMenu li {
+    display: inline; /*hiển thị trên một dòng #14a19a*/
+    border-right: solid 1px #14a19a;
+    padding: 21px;
+    padding-bottom: 24px;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+}
+
+    .navMenu li:hover {
+        background-color: rgba(0,0,0,0.3); /*giảm màu nền đi 30%*/
+        -webkit-transition: all 0.5s ease-out; /*đổi mầu nền từ từ khi hover*/
+        -moz-transition: all 0.5s ease-out;
+    }
+
+.navMenu a:hover {
+    text-decoration: none;
+    opacity: 0.5;
+}
+/*CSS cho thằng hop thoai tim kiem*/
+#TimKiem {
+    overflow: hidden;
+}
+
+.TextBoxTimKiem {
+}
+
+#txtTimKiem {
+    float: left;
+    margin-left: 0;
+}
+
+    #txtTimKiem:focus {
+        outline: none; /*Xóa viền cho cái input chết tiệt*/
+    }
+/*css button hình ảnh tìm kiếm*/
+#divHinhAnhTimKiem button {
+    float: left;
+    padding: 5px 11px 5px 12px;
+    background-color: #f6f6f6;
+}
+
+    #divHinhAnhTimKiem button:hover {
+        opacity: 0.5;
+        -webkit-transition: all 0.5s ease-out; /*đổi mầu nền từ từ khi hover*/
+        -moz-transition: all 0.5s ease-out;
+    }
+
+#divHinhAnhTimKiem img {
+    width: 20px;
+    height: 20px;
+}
+
+.addcss-timkiem1 {
+    box-shadow: 0 0 4px 4px rgba(0,0,0,0.5) inset;
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.addcss-timkiem2 {
+    box-shadow: 0 0 4px 4px rgba(0,0,0,0.5) inset;
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+/*CSS cho nivo slider*/
+#slider {
+    float: right;
+    width: 960px;
+    height: 319px;
+}
+
+    #slider img {
+        width: 960px;
+        height: 319px;
+    }
+
+.chimuc {
+    display: block;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: -13px;
+    cursor: pointer;
+}
+
+#menutrai {
+    float: left;
+}
+
+#menuphai {
+    float: right;
+}
+/*test*/
+.panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: cadetblue;
+    border: solid 1px #c3c3c3;
+}
+
+.panel {
+    padding: 10px;
+    display: none;
+    background-color: white;
+}
+
+.chimuc-vanhoc {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    padding-left: 35px;
+    border-bottom: solid 1px #c3c3c3;
+    display: block;
+    background-color: white;
+    cursor: pointer;
+    font-size: smaller;
+    height: 20px;
+}
+
+    .chimuc-vanhoc:hover {
+        background-color: antiquewhite; /*giảm màu nền đi 30%*/
+        -webkit-transition: all 0.5s ease-out; /*đổi mầu nền từ từ khi hover*/
+        -moz-transition: all 0.5s ease-out;
+    }
+
+.chude {
+    display: none;
+    -webkit-transition-duration: 100s; /* Safari */
+    transition-duration: 100s;
+}
+
+.sb-right {
+    float: right;
+}
+.sb-down{
+    float:right;
+}
+.btdoc {
+    display: inline-block;
+}
+
+#bartieude {
+    width: auto;
+    height: 40px;
+    background-color: #14a19a;
+    clear: both;
+    color:white;
+    overflow: hidden;
+    line-height: 2.6;
+    padding-left: 25px
+}
+
+#barsukien {
+    width: auto;
+    height: 32px;
+    background-color: white;
+    padding: 10px 30px 15px 30px;
+    clear: both;
+}
+
+#content {
+    width: 960px;
+    height: auto;
+    background-color: #fafafa;
+    display: table;
+}
+
+.sanpham {
+    width: 237px;
+    height: 332px;
+    border: 0.5px solid #fafafa;
+    display: block;
+    float: left;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+}
+
+    .sanpham:hover {
+        border: 0.5px solid #ccc;
+    }
+
+.sanpham-chuanoidung {
+    display: block;
+    height: 300px;
+    width: 175px;
+    margin-left: 31px;
+    margin-right: 31px;
+}
+
+.sort-button {
+    border: 0.5px solid #ccc;
+    float: left;
+    width: auto;
+    height: 31px;
+    cursor: pointer;
+}
+
+    .sort-button:hover {
+        background-color: antiquewhite;
+    }
+
+.sort-bao {
+    width: auto;
+    height: 18px;
+    padding-top: 3px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+}
+
+.sort-sanpham {
+    font-size: 13px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#caret {
+    height: 16px;
+    padding-top: 9px;
+    padding-left: 6px;
+    font-size: 80%;
+}
+
+.sort-list {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    background-clip: padding-box;
+}
+
+.li-sort {
+    list-style: none;
+    display: block;
+}
+
+.tensach_sach {
+    display: block;
+    font-size: 13px;
+    color: #000;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    margin: 8px auto 0;
+    height: 36px;
+    line-height: 18px;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+.tentg_sach {
+    color: #777;
+    font-size: 11px;
+    text-overflow: ellipsis;
+    position:relative;
+    overflow:inherit;
+    text-align: left;
+    font-family: Arial,Helvetica,sans-serif;
+    line-height:normal;
+    padding-top:5px;
+}
+
+.gia_sach {
+    font-size: 14px;
+    color: #444;
+    font-weight: 700;
+    padding: 5px 0 0;
+    text-align: left;
+    font-family: Arial,Helvetica,sans-serif;
+}
+.giaban::after{
+    content: "đ";
+    padding-left:3px;
+    text-decoration:underline;
+    font-size:80%;
+}
+a:hover{
+    cursor:pointer;
+    text-decoration:none;
+}
+.sanpham-chuanoidung p{
+    margin-bottom:0px;
+}
+.giamgia{
+    line-height:normal;
+    background-color: #ff9601;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 25px;
+    margin-top: -2px;
+    padding: 5px;
+    vertical-align: middle;
+}
+.giacu{
+    font-size: 11px;
+    color: #999;
+    text-decoration: line-through;
+    display: block;
+    text-align: left;
+    line-height:normal;
+}
+.giacu::after{
+    content: "đ";
+    padding-left:1  px;
+    font-size:80%;
+    text-decoration: line-through;
+}
+.sanpham-giohang{
+    width: 175px;
+    height:27px;
+    display:none;
+    font-size: 11px;
+    padding: 5px;
+    outline-color: #ccc;
+    margin: 5px auto 0;
+    background-color: #fff;
+    border: 1px solid #c3c3c3;
+    line-height:0;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+}
+.sanpham-giohang:hover{
+    background-color: #cdcdcd;
+}
+.giohang-font{
+    font-size: 1.8em;
+    line-height: .75em;
+    vertical-align: -18%;
+}
+.sanpham-hethang{
+    width: 175px;
+    height:27px;
+    display:none;
+    font-size: 11px;
+    padding: 5px;
+    outline-color: #ccc;
+    margin: 5px auto 0;
+    background-color: red;
+    line-height:0;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+}
+.sanpham-hethang:hover{
+    background-color:red;
+    cursor:default;
+}
+#content1{
+      width: 960px;
+    height: auto;
+    background-color: #fafafa;
+    display: table;
+}
+.sanpham:hover button{
+    display:block;
+}

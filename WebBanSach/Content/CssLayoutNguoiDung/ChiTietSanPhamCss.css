@@ -1,0 +1,420 @@
+﻿ul li {
+    list-style: none;
+}
+
+.navMenu-add {
+    width: 700px;
+    margin-left: 300px;
+}
+
+.flash {
+    background-color: black;
+    height: 32px;
+    margin-bottom: 16px;
+}
+
+.Phone {
+    float: left;
+    color: white;
+    margin-top: 4px;
+    font-size: 115%;
+    margin-left: 16px;
+}
+
+.DangKyDangNhap {
+    float: right;
+    color: white;
+    margin-top: 5px;
+    font-size: 114%;
+    margin-right: 33px;
+}
+
+.nav-center a {
+    color: white;
+    text-decoration: none;
+}
+
+    .nav-center a:hover {
+        color: darkgray;
+        text-decoration: none;
+    }
+
+#dangnhap {
+    margin-left: 25px;
+}
+
+.adding-nav-ul {
+    display: inline-flex;
+    margin-bottom: 0px;
+}
+
+    .adding-nav-ul li {
+        padding-top: 21px;
+        padding-bottom: 21px;
+        padding-left: 23.3px;
+        padding-right: 23.3px;
+        font-size: 114%;
+    }
+
+.navbar-collapse-adding {
+    background: #14a19a;
+}
+
+.adding-nav-ul li {
+}
+
+.navbar-adding-top {
+    min-height: 32px;
+    background-color: #303030;
+    margin-bottom: 16px;
+    position: relative;
+    border-bottom-width: 0px;
+}
+
+.navbar-header {
+    color: white;
+    margin-top: 4px;
+    font-size: 115%;
+    margin-left: 16px;
+}
+
+.navbar-right-add > li > a {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+    color: white !important;
+    font-size: 114% !important;
+}
+
+.navbar-right-add > li :hover {
+    color: #14a19a !important;
+}
+
+.sign-in {
+    margin-right: -14px !important;
+}
+
+.register {
+    margin-right: -1px !important;
+}
+
+.navbar-adding-second {
+    min-height: 62px;
+    background-color: #14a19a;
+    border: none;
+    margin-bottom: 16px !important;
+}
+
+.link-add {
+    padding-bottom: 21px !important;
+    padding-top: 21px !important;
+    padding-left: 23px !important;
+    padding-right: 23px !important;
+    color: white !important;
+    font-size: 114% !important;
+    border-right: solid 1px #14a19a;
+}
+
+.nav-center {
+    position: relative;
+    left: 28.6%;
+    float: left;
+}
+
+    .nav-center li:hover {
+        background-color: rgba(0,0,0,0.3); /*giảm màu nền đi 30%*/
+        -webkit-transition: all 0.5s ease-out; /*đổi mầu nền từ từ khi hover*/
+        -moz-transition: all 0.5s ease-out;
+    }
+
+body {
+    background-color: #edeae9;
+}
+
+section {
+    background-color: white !important;
+    padding-top: 32px !important;
+}
+
+.item-box .item-name {
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    line-height: 25px;
+    margin: 0 0 10px;
+}
+
+.item_row1 {
+    margin-bottom: 10px;
+}
+
+    .item_row1 h6 {
+        margin: 0 5px 5px 0 !important;
+        line-height: 20px !important;
+        display: inline-block !important;
+    }
+
+    .item_row1 p {
+        line-height: 20px;
+        margin-bottom: 0;
+        display: inline-block;
+    }
+
+        .item_row1 p a {
+            color: #00aaf1;
+            font-weight: 700;
+            font-size: 12px;
+        }
+
+    .item_row1 span {
+        background-color: rgba(134, 222, 176, 0.69);
+        padding: 3px 3px 3px 3px;
+        font-size: 16px;
+        font-style: italic;
+    }
+
+.item_row2 .old-price-item {
+    line-height: 18px;
+    font-size: 12px;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+#old-price-label {
+    font-size: 12px !important;
+}
+
+#old-price {
+    text-decoration: line-through !important;
+    margin-left: 3px;
+}
+
+.item-row2 .special-price-item {
+    margin: 7px 0 !important;
+    font-size: 12px !important;
+}
+
+#special-price-label {
+    color: #666;
+    display: inline-block;
+    min-width: 80px;
+}
+
+#special-price {
+    color: #090;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.special-price-item span:nth-child(3) {
+    font-weight: 700;
+    font-size: 11px;
+    color: #444;
+    margin-left: 2px;
+    display: inline-block;
+}
+
+.saleoff-price-item span:nth-child(1) {
+    display: inline-block;
+    min-width: 60px;
+    color: #666;
+    font-size: 12px;
+    margin-right: 18px;
+}
+
+.saleoff-price-item span:nth-child(2) {
+    color: #333;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+#item-product-option {
+    margin-top: 4px;
+    position: relative;
+}
+
+.item-box .add-cart-action .quantity-box {
+    width: 70px;
+    float: left;
+    margin-top: 20px;
+}
+
+    .item-box .add-cart-action .quantity-box .quantity-label {
+        line-height: 20px;
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .item-box .add-cart-action .quantity-box .quantity-col1 {
+        clear: both;
+        float: left;
+        width: 70px;
+    }
+
+.input-group-btn-vertical {
+    position: relative;
+    width: 1%;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.cta-box {
+    position: absolute;
+    margin: 43px 0px 0 80px;
+}
+
+    .cta-box button {
+        /*font-size: 11px;
+        background-color: #d71a1a;
+        border: 1px solid #c3c3c3;
+        line-height: 0;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;*/
+        border: none;
+        color: #fff;
+        text-align: center;
+        white-space: nowrap;
+        cursor: pointer;
+        font-weight: 400;
+        vertical-align: top;
+        font-size: 15px;
+        padding: 0;
+        line-height: 37px;
+        box-shadow: 0 -2px 0 #a80000 inset;
+        border-radius: 5px;
+        background-color: #d71a1a;
+    }
+
+.icon {
+    font-size: 23px;
+    float: left;
+    padding: 0 12px;
+    border-right: 1px solid rgba(0,0,0,.15);
+}
+
+.text {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.cta-box button:hover{
+    opacity:0.7;
+}
+.introduct-product{
+    padding-left:15px;
+    padding-right:15px;
+}
+.introduct-pd-title{
+    font-size: 20px !important;
+    font-weight: 400;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    color: #444;
+}
+.author-price{
+    border-bottom: 1px solid #e7e7e7;
+    padding-bottom:7px;
+}
+.introduct p:nth-child(1){
+    font-size:17px;
+    color:#ff6600;
+    font-weight:600;
+}
+.introduct-details {
+    border-bottom: 1px solid #e7e7e7;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.sanpham {
+    width: 234px;
+    height: 332px;
+    border: 0.5px solid #fafafa;
+    display: block;
+    float: left;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+    .sanpham:hover {
+        border: 0.5px solid #ccc;
+    }
+
+.sanpham-chuanoidung {
+    display: block;
+    height: 300px;
+    width: 175px;
+    margin-left: 28.5px;
+    margin-right: 28.5px;
+}
+.tensach_sach {
+    display: block;
+    font-size: 13px;
+    color: #000;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    margin: 8px auto 0;
+    height: 36px;
+    line-height: 18px;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+.tentg_sach {
+    color: #777;
+    font-size: 11px;
+    text-overflow: ellipsis;
+    position:relative;
+    overflow:inherit;
+    text-align: left;
+    font-family: Arial,Helvetica,sans-serif;
+    line-height:normal;
+    padding-top:5px;
+}
+
+.gia_sach {
+    font-size: 14px;
+    color: #444;
+    font-weight: 700;
+    padding: 5px 0 0;
+    text-align: left;
+    font-family: Arial,Helvetica,sans-serif;
+}
+.giaban::after{
+    content: "đ";
+    padding-left:3px;
+    text-decoration:underline;
+    font-size:80%;
+}
+a:hover{
+    cursor:pointer;
+    text-decoration:none;
+}
+.sanpham-chuanoidung p{
+    margin-bottom:0px;
+}
+.giamgia{
+    line-height:normal;
+    background-color: #ff9601;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 25px;
+    margin-top: -2px;
+    padding: 5px;
+    vertical-align: middle;
+}
+.giacu{
+    font-size: 11px;
+    color: #999;
+    text-decoration: line-through;
+    display: block;
+    text-align: left;
+    line-height:normal;
+}
+.giacu::after{
+    content: "đ";
+    padding-left:1  px;
+    font-size:80%;
+    text-decoration: line-through;
+}

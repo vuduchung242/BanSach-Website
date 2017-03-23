@@ -1,0 +1,366 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    @*Css của teamplate*@
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    @*Css tự thiết kế*@
+    <link href="~/Content/CssLayoutNguoiDung/ChiTietSanPhamCss.css" rel="stylesheet" />
+    @*font awesome*@
+    <link href="~/Content/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/CssLayoutNguoiDung/jquery.bootstrap-touchspin.css" rel="stylesheet" />
+    @* CSS cua image zoom smooth*@
+    <link href="~/Content/CssLayoutNguoiDung/smoothproducts.css" rel="stylesheet" />
+    @*CSS cua swip slider*@
+    <link href="~/Content/CSS_Swip_Slider/swiper.css" rel="stylesheet" />
+    <link href="~/Content/CSS_Swip_Slider/swiper-content.css" rel="stylesheet" />
+    @* js-jq của toàn trang *@
+    <script src="~/Scripts/jquery-1.3.2-vsdoc2.js"></script>
+    <script src="~/Scripts/jquery-3.1.1.min.js"></script>
+    <script src="~/Scripts/jquery-1.8.3.min.js"></script>
+    @* Thư viện js của thằng số lượng của giỏ hàng *@
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery.bootstrap-touchspin.js"></script>
+    <style>
+        #gallery_01 img {
+            border: 2px solid white;
+        }
+
+        /*Change the colour*/
+        .active img {
+            border: 2px solid white !important;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top navbar-adding-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    (0962441498)
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right navbar-right-add sign-in">
+                        <li><a href="#sdsd" class="navbar-link"><i class="fa fa-sign-in fa-fw" aria-hidden="true"></i> Đăng Nhập</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right navbar-right-add register">
+                        <li><a href="#" class="navbar-link"><i class="fa fa-user-plus fa-fw" aria-hidden="true"></i> Đăng Ký</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <nav class="navbar navbar-default navbar-adding-second" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigations</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav nav-center">
+                        <li><a href="#" class="navbar-link link-add">Trang Chủ</a></li>
+                        <li><a href="#" class="navbar-link link-add">Giới Thiệu</a></li>
+                        <li><a href="#" class="navbar-link link-add">Liên Hệ</a></li>
+                        <li><a href="#" class="navbar-link link-add">Hướng Dẫn</a></li>
+                        <li><a href="#" class="navbar-link link-add">Sách</a></li>
+                    </ul>
+                </div>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-5">
+                    <div class="sp-wrap" style="margin-left:90px;">
+                        <a href="~/Image/image_zoom-smooth/viet-nam-danh-tac-doan-tuyet.450x652.w.b.jpg">
+                            <img src="~/Image/image_zoom-smooth/viet-nam-danh-tac-doan-tuyet.450x652.w.b.jpg" />
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-xs-7">
+                    <div class="item-box">
+                        <h1 class="item-name">Việt Nam Danh Tác - Đoạn Tuyệt</h1>
+                        <div class="row author-price">
+                            <div class="col-xs-7">
+                                <div class="item_row1">
+                                    <h6>Tác giả</h6>
+                                    <p><a href="#">Nhà văn Nhật Linh</a></p>
+                                    <br />
+                                    <span>Còn Hàng</span>
+                                </div>
+                                <div class="item-row2">
+                                    <p class="old-price-item">
+                                        <span id="old-price-label">Giá thị trường: </span>
+                                        <span id="old-price">58.000 ₫</span>
+                                    </p>
+                                    <p class="special-price-item">
+                                        <span id="special-price-label">Tại Website: </span>
+                                        <span id="special-price">40.000 ₫</span>
+                                        <span>(Đã có VAT)</span>
+                                    </p>
+                                    <p class="saleoff-price-item">
+                                        <span>Tiết kiệm: </span>
+                                        <span>18.000 ₫ (31%)</span>
+                                    </p>
+                                </div>
+                                <form role="form" id="add-to-cart">
+                                    <div class="item-product-option">
+                                        <div id="add-cart-action">
+                                            <div class="add-cart-action">
+                                                <div class="quantity-box">
+                                                    <p class="quantity-label">Số lượng:</p>
+                                                    <div class="quantily-col1">
+                                                        <p class="number-input">
+                                                            <input id="demo3" type="text" value="" name="demo_vertical" class="form-control" style="display: block;">
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="cta-box">
+                                                    <button>
+                                                        <span class="icon"><i class="fa fa-shopping-cart"></i></span>
+                                                        <span class="text">Thêm Vào Giỏ Hàng</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-xs-5"></div>
+                        </div>
+                        <div class="row">
+                            <div class="introduct-product">
+                                <h3 class="introduct-pd-title">Giới Thiệu Sách</h3>
+                                <div class="introduct">
+                                    <p>Việt Nam Danh Tác - Đoạn Tuyệt</p>
+                                    <p>
+                                        "Trời đã mờ mờ tối. Trên rặng tre xơ xác, da trời tím sẫm thưa thớt điểm vài ngôi sao long lanh. Trong phòng, Loan ngồi một mình tựa cửa, tuy trên vai quàng chiếc khăn dầy mà nàng còn như thấy hết cả cái lạnh lẽo của buổi chiều xuân thấm vào người. Dưới ánh đèn lù mù, con gà luộc nằm trên đĩa, mở toác mỏ như muốn kêu; trong lọ thủy tinh mấy bông hoa hồng vì cuống không tới nước nên đã ngả xuống, ủ rũ, héo tàn; mấy cánh hồng rải rác rơi trên khảm.<br /><br />
+
+                                        Loan đưa mắt nhìn quanh phòng: đôi gối thêu song song đặt ở đầu giường với chiếc mền lụa đỏ viền hoa lý ẩn sau bức màn thiên thanh, diễn ra một quang cảnh êm ấm một cảnh bồng lai phảng phất hương thơm, Loan nhắm mắt lại, rùng mình nghĩ đến rằng đó là nơi chôn cái đời ngây thơ, trong sạch của nàng: ở trong cái động tiên bé nhỏ ấy, lát nữa thân nàng sẽ hoàn toàn thuộc về người khác, người mà nàng không yêu hay cố yêu mà chưa thể yêu được. Vẻ trang hoàng lộng lẫy càng làm rõ vẻ cay chua của sự hiến thân vô nghĩa lý."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top:20px;">
+                <h3 class="introduct-pd-title introduct-details">Thông Tin Chi Tiết</h3>
+                <div class="col-xs-8">
+                    <table class="table table-bordered table-striped">
+                        <colgroup>
+                            <col class="col-xs-3">
+                            <col class="col-xs-5">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Công ty phát hành
+                                </td>
+                                <td><a href="#">Nhã Nam</a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Nhà xuất bản
+                                </td>
+                                <td>NXB Hội Nhà Văn</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Trọng lượng vận chuyển(gram)
+                                </td>
+                                <td>250</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Kích thước
+                                </td>
+                                <td>14.5 x 20.5 cm</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Tác giả
+                                </td>
+                                <td>Nhà văn Nhất Linh</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Số trang
+                                </td>
+                                <td>248</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Ngày xuất bản
+                                </td>
+                                <td>07-2016</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-xs-4"></div>
+            </div>
+            <div class="row">
+                <h3 class="introduct-pd-title introduct-details">Sản Phẩm Cùng Loại</h3>
+                <div class="swiper-container" style="height:340px;">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="sanpham" data-sp="4">
+                                <a class="sanpham-chuanoidung">
+                                    <img src="/Anh Bia Sach/00002.jpg">
+                                    <p class="tensach_sach">Nơi Nào Đông Ấm, Nơi Nào Hạ Mát</p>
+                                    <p class="tentg_sach">Cố Tây Tước </p>
+                                    <p class="gia_sach">
+                                        <span class="giaban">86400</span>
+                                        <span class="giamgia">-20%</span><br>
+                                        <span class="giacu">108000</span>
+                                    </p>
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sanpham" data-sp="3">
+                                <a class="sanpham-chuanoidung">
+                                    <img src="/Anh Bia Sach/00001.png">
+                                    <p class="tensach_sach">Hôn Ước Rắc Rối</p>
+                                    <p class="tentg_sach">Mary Balogh </p>
+                                    <p class="gia_sach">
+                                        <span class="giaban">79200</span>
+                                        <span class="giamgia">-20%</span><br>
+                                        <span class="giacu">99000</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sanpham" data-sp="5">
+                                <a class="sanpham-chuanoidung">
+                                    <img src="/Anh Bia Sach/00003.jpg">
+                                    <p class="tensach_sach">Trước Lúc Anh Đi</p>
+                                    <p class="tentg_sach">Jonathan Tropper </p>
+                                    <p class="gia_sach">
+                                        <span class="giaban">73600</span>
+                                        <span class="giamgia">-20%</span><br>
+                                        <span class="giacu">92000</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sanpham" data-sp="6">
+                                <a class="sanpham-chuanoidung">
+                                    <img src="/Anh Bia Sach/00004.jpg">
+                                    <p class="tensach_sach">Tuyển Chọn Hoàng Phi (Tập 2) - Những Cô Gái Tinh Hoa</p>
+                                    <p class="tentg_sach">Keira Cass</p>
+                                    <p class="gia_sach">
+                                        <span class="giaban">72000</span>
+                                        <span class="giamgia">-20%</span><br>
+                                        <span class="giacu">90000</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sanpham" data-sp="7">
+                                <a class="sanpham-chuanoidung">
+                                    <img src="/Anh Bia Sach/00005.jpg">
+                                    <p class="tensach_sach">Em Chưa Từng Quên Anh</p>
+                                    <p class="tentg_sach"> Cathleen Davitt Bell </p>
+                                    <p class="gia_sach">
+                                        <span class="giaban">78400</span>
+                                        <span class="giamgia">-20%</span><br>
+                                        <span class="giacu">98000</span>
+                                    </p>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sanpham" data-sp="8">
+                                <a class="sanpham-chuanoidung">
+                                    <img src="/Anh Bia Sach/00006.jpg">
+                                    <p class="tensach_sach">Mình Có Nợ Nhau Từ Kiếp Trước</p>
+                                    <p class="tentg_sach"> Tào Đình </p>
+                                    <p class="gia_sach">
+                                        <span class="giaban">97600</span>
+                                        <span class="giamgia">-20%</span><br>
+                                        <span class="giacu">122000</span>
+                                    </p>
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="fb-root"></div>
+                <div id="fb-root"></div>
+                <script>
+                    (function (d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s); js.id = id;
+                        js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8&appId=823743504439546";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));
+                </script>
+                <div class="fb-comments" data-href="http://localhost:7083/" data-width="1170" data-numposts="5"></div>
+            </div>
+    </section>
+
+    @RenderBody()
+    @*Script của thằng số lượng sản phẩm của giỏ hàng*@
+    <script>
+        $("input[name='demo_vertical']").TouchSpin({
+            verticalbuttons: true,
+            verticalupclass: 'glyphicon glyphicon-plus',
+            verticaldownclass: 'glyphicon glyphicon-minus'
+        });
+    </script>
+    <script>
+        $(window).load(function () {
+            $('.sp-wrap').smoothproducts();
+        });
+    </script>
+    <script src="~/Scripts/Swip_Slider/swiper.js"></script>
+    <script>
+        var appendNumber = 4;
+        var prependNumber = 1;
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            slidesPerView: 5,
+            paginationClickable: true,
+        });
+    </script>
+    <script src="~/Scripts/smoothproducts.min.js"></script>
+    @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="~/Scripts/jquery-1.10.2.min.js"><\/script>')</script>*@
+
+</body>
+</html>

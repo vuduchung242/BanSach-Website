@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "LoaiSachPartial";
+    List<ChuDe> oj = ViewBag.Chude;
+    string a = Request.QueryString["loaisachId"];
+    string b = Request.QueryString["MaChuDe"];
+}
+
+
+@using WebBanSach.Models;
+@model List<LoaiSach>
+
+
+<div class="activity" id="TimKiem">
+    @using (Html.BeginForm())
+    {
+        @Html.TextBox("txtTimKiem", "", htmlAttributes: new { @class = "TextBoxTimKiem", @placeholder = "Nhập vào từ khóa cần tìm" })
+        @*Chèn vào image button*@
+        <div id="divHinhAnhTimKiem">
+            <button class="search" type="submit"><img id="hinhanhtimkiem" src="~/   Image/image_Nivo/337699-200.png" /></button>
+        </div>
+    }
+</div>
+<div class="activity">
+    <h1 class="item-header">Danh Mục Sản Phẩm</h1>
+    @foreach (var item in Model)
+    {
+        <div  data-loaisach="@item.LoaiSach1" url-loaisach ="@a" class="activity-list-update sub-menu">
+            <p class="chimuc">
+                 <a data-loaisach-url="@item.LoaiSach1" class="url" href="#">@item.TenLoaiSach</a>
+                @*<a href="javascript:void(0)">@item.TenLoaiSach</a>*@
+                <i class="fa fa-arrow-circle-right sb-right" data-symbol-right="@item.LoaiSach1" style="display:block;" aria-hidden="true"></i>
+                <i class="fa fa-arrow-circle-down sb-down" data-symbol-down="@item.LoaiSach1" style="display:none;" aria-hidden="true"></i>
+            </p>
+            <div class="clear"></div>
+        </div>
+        <div data-chude ="@item.LoaiSach1" class="chude">
+            @for (int i = 0; i < oj.Count; i++)
+            {
+                if (item.LoaiSach1 == oj[i].LoaiSach)
+                {
+                    <a href="@Url.Action("Ls_chude_sach", new {@loaisachId=item.LoaiSach1 , @MaChuDe = oj[i].MaChuDe})" url-chude ="@b" class="chimuc-vanhoc" chude-id="@oj[i].MaChuDe">@oj[i].TenChuDe</a>
+                }
+            }
+        </div>
+    }
+    <a href="#" class="item-footer green">
+        See all activity
+    </a>
+</div>
